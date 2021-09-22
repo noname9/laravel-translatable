@@ -1,8 +1,8 @@
 <?php
 
-namespace Dimsav\Translatable\Test\Model;
+namespace noname9\Translatable\Test\Model;
 
-use Dimsav\Translatable\Translatable;
+use noname9\Translatable\Translatable;
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
 class CountryWithCustomLocaleKey extends Eloquent

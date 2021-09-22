@@ -1,6 +1,6 @@
 <?php
 
-namespace Dimsav\Translatable\Exception;
+namespace noname9\Translatable\Exception;
 
 class LocalesNotDefinedException extends \Exception
 {

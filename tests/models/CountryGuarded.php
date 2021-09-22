@@ -1,8 +1,8 @@
 <?php
 
-namespace Dimsav\Translatable\Test\Model;
+namespace noname9\Translatable\Test\Model;
 
-use Dimsav\Translatable\Translatable;
+use noname9\Translatable\Translatable;
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
 class CountryGuarded extends Eloquent
@@ -15,6 +15,6 @@ class CountryGuarded extends Eloquent
 
     public $translatedAttributes = ['name'];
 
-    public $translationModel = 'Dimsav\Translatable\Test\Model\CountryTranslation';
+    public $translationModel = 'noname9\Translatable\Test\Model\CountryTranslation';
     public $translationForeignKey = 'country_id';
 }

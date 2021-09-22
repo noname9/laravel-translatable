@@ -1,11 +1,11 @@
 <?php
 
-use Dimsav\Translatable\Test\Model\Food;
-use Dimsav\Translatable\Test\Model\Person;
-use Dimsav\Translatable\Test\Model\Country;
-use Dimsav\Translatable\Test\Model\CountryStrict;
-use Dimsav\Translatable\Test\Model\CountryWithCustomLocaleKey;
-use Dimsav\Translatable\Test\Model\CountryWithCustomTranslationModel;
+use noname9\Translatable\Test\Model\Food;
+use noname9\Translatable\Test\Model\Person;
+use noname9\Translatable\Test\Model\Country;
+use noname9\Translatable\Test\Model\CountryStrict;
+use noname9\Translatable\Test\Model\CountryWithCustomLocaleKey;
+use noname9\Translatable\Test\Model\CountryWithCustomTranslationModel;
 
 class TranslatableTest extends TestsBase
 {
@@ -13,7 +13,7 @@ class TranslatableTest extends TestsBase
     {
         $country = new Country();
         $this->assertEquals(
-            'Dimsav\Translatable\Test\Model\CountryTranslation',
+            'noname9\Translatable\Test\Model\CountryTranslation',
             $country->getTranslationModelNameDefault());
     }
 
@@ -31,7 +31,7 @@ class TranslatableTest extends TestsBase
         App::make('config')->set('translatable.translation_suffix', 'Trans');
         $country = new Country();
         $this->assertEquals(
-            'Dimsav\Translatable\Test\Model\CountryTrans',
+            'noname9\Translatable\Test\Model\CountryTrans',
             $country->getTranslationModelName());
     }
 
@@ -376,7 +376,7 @@ class TranslatableTest extends TestsBase
 
     public function test_if_locales_are_not_defined_throw_exception()
     {
-        $this->expectException(Dimsav\Translatable\Exception\LocalesNotDefinedException::class);
+        $this->expectException(noname9\Translatable\Exception\LocalesNotDefinedException::class);
 
         $this->app->config->set('translatable.locales', []);
         $this->app->make('translatable.locales')->load();
@@ -754,12 +754,12 @@ class TranslatableTest extends TestsBase
         $this->app->config->set('translatable.fallback_locale', 'de');
         $this->app->config->set('translatable.use_fallback', true);
 
-        $city = new class extends \Dimsav\Translatable\Test\Model\City {
+        $city = new class extends \noname9\Translatable\Test\Model\City {
             protected $fillable = [
                 'country_id',
             ];
             protected $table = 'cities';
-            public $translationModel = \Dimsav\Translatable\Test\Model\CityTranslation::class;
+            public $translationModel = \noname9\Translatable\Test\Model\CityTranslation::class;
             public $translationForeignKey = 'city_id';
 
             protected function isEmptyTranslatableAttribute(string $key, $value): bool

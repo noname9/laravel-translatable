@@ -1,8 +1,8 @@
 <?php
 
-namespace Dimsav\Translatable\Test\Model;
+namespace noname9\Translatable\Test\Model;
 
-use Dimsav\Translatable\Translatable;
+use noname9\Translatable\Translatable;
 
 class CountryWithCustomTranslationModel extends Country
 {
@@ -10,5 +10,5 @@ class CountryWithCustomTranslationModel extends Country
 
     public $table = 'countries';
     public $translationForeignKey = 'country_id';
-    public $translationModel = 'Dimsav\Translatable\Test\Model\CountryTranslation';
+    public $translationModel = 'noname9\Translatable\Test\Model\CountryTranslation';
 }

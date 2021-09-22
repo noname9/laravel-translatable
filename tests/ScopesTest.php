@@ -1,7 +1,7 @@
 <?php
 
-use Dimsav\Translatable\Test\Model\Country;
-use Dimsav\Translatable\Test\Model\Vegetable;
+use noname9\Translatable\Test\Model\Country;
+use noname9\Translatable\Test\Model\Vegetable;
 
 class ScopesTest extends TestsBase
 {

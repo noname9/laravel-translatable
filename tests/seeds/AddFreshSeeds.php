@@ -1,11 +1,11 @@
 <?php
 
-use Dimsav\Translatable\Test\Model\City;
-use Dimsav\Translatable\Test\Model\Country;
-use Dimsav\Translatable\Test\Model\Vegetable;
-use Dimsav\Translatable\Test\Model\CityTranslation;
-use Dimsav\Translatable\Test\Model\CountryTranslation;
-use Dimsav\Translatable\Test\Model\VegetableTranslation;
+use noname9\Translatable\Test\Model\City;
+use noname9\Translatable\Test\Model\Country;
+use noname9\Translatable\Test\Model\Vegetable;
+use noname9\Translatable\Test\Model\CityTranslation;
+use noname9\Translatable\Test\Model\CountryTranslation;
+use noname9\Translatable\Test\Model\VegetableTranslation;
 
 class AddFreshSeeds
 {

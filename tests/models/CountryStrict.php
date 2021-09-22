@@ -1,8 +1,8 @@
 <?php
 
-namespace Dimsav\Translatable\Test\Model;
+namespace noname9\Translatable\Test\Model;
 
-use Dimsav\Translatable\Translatable;
+use noname9\Translatable\Translatable;
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
 class CountryStrict extends Eloquent
@@ -18,11 +18,11 @@ class CountryStrict extends Eloquent
 
     /**
      * Here we set a custom model for translation.
-     * The convention would be Dimsav\Translatable\Test\Model\CountryStrictTranslation.
+     * The convention would be noname9\Translatable\Test\Model\CountryStrictTranslation.
      *
      * @var string Class containing the translation
      */
-    public $translationModel = 'Dimsav\Translatable\Test\Model\StrictTranslation';
+    public $translationModel = 'noname9\Translatable\Test\Model\StrictTranslation';
 
     /**
      * @var string Foreign key for the translation relationship

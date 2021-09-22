@@ -1,6 +1,6 @@
 <?php
 
-use Dimsav\Translatable\Locales;
+use noname9\Translatable\Locales;
 
 class LocalesTest extends TestsBase
 {
