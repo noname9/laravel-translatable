@@ -21,8 +21,8 @@
         "issues": "https://github.com/dimsav/laravel-translatable/issues"
     },
     "require": {
-        "php": ">=7.1.3",
-        "illuminate/support": ">=5.8"
+        "php": ">=7.2",
+        "illuminate/support": ">=6.0"
     },
     "require-dev": {
         "orchestra/testbench": ">=3.8"
